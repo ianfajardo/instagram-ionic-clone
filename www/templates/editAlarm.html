@@ -1,0 +1,36 @@
+<ion-view title="Set Alarm">
+  <ion-nav-buttons side="secondary">
+      <button class="button button-icon icon ion-navicon" ng-click="doSomething()">
+        
+      </button>
+    </ion-nav-buttons>
+
+  <ion-content padding="true" scroll="false">
+    <div class="row" style="text-align:center;">
+      <div class="col col-33" >
+        <i class="icon ion-plus plus" on-tap="increase('hour', 1, 12)" on-hold="increaseHold('hour', 1, 12)" on-release="release('hour')"></i>
+        <div style="font-size:25px;text-align:center">
+        {{hour}}
+        </div>
+        <i class="icon ion-minus minus" on-tap="decrease('hour', 1 ,12)" on-hold="decreaseHold('hour', 1, 12)" on-release="release('hour')"></i>
+      </div>
+      <div class="col col-33">
+        <i class="icon ion-plus plus" on-tap="increase('minute', 0, 59)" on-hold="increaseHold('minute', 0, 59)" on-release="release('minute', 0, 59)"></i>
+        <div style="font-size:2em;text-align:center">
+        {{minute}}
+        </div>
+        <i class="icon ion-minus minus" on-tap="decrease('minute', 0 , 59)" on-hold="decreaseHold('minute', 0, 59)" on-release="release('minute', 0, 59)" ></i>
+      </div>
+      <div class="col col-33">
+        <i class="icon ion-plus plus" on-tap="periodToggle()"></i>
+        <div style="font-size:2em;text-align:center">
+        {{period}}
+        </div>
+        <i class="icon ion-minus minus" on-tap="periodToggle()"></i>
+      </div>
+    </div>
+    <div class="row">
+      <button class="button button-block button-positive">SET ALARM</button>
+    </div>
+  </ion-content>
+</ion-view>

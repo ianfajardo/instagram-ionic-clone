@@ -1,0 +1,24 @@
+<ion-view view-title="Photostream">
+  <ion-content has-subheader="false">
+
+    <div class="list card" ng-repeat="photo in photos | reverse">
+      <div class="item item-image">
+        <img ng-src="{{photo.img_url}}" alt="">
+      </div>
+      <div class="item tabs tabs-secondary tabs-icon-left">
+        <a class="tab-item" href="#">
+          <i class="icon ion-thumbsup"></i>
+          Like
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-chatbox"></i>
+          Comment
+        </a>
+        <a class="tab-item" href="#">
+          <i class="icon ion-share"></i>
+          Share
+        </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
