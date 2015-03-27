@@ -20,7 +20,12 @@ angular.module('starter', ['ionic', 'ngCordova'])
 })
 
 .config(function($stateProvider, $urlRouterProvider){
-  $stateProvider
+  $stateProvider 
+  .state('login', {
+    url: "/login",
+    templateUrl: "templates/login.html",
+    controller: 'loginCtrl'
+  })
   .state('tabs', {
     url: "/tabs",
     abstract: true,
@@ -61,7 +66,7 @@ angular.module('starter', ['ionic', 'ngCordova'])
       }
     }
   });
-  $urlRouterProvider.otherwise('/tabs/photostream');
+  $urlRouterProvider.otherwise('login');
 })
 
 .filter('reverse', function() {
@@ -172,6 +177,13 @@ angular.module('starter', ['ionic', 'ngCordova'])
 
     }
   }
+})
+
+.controller('loginCtrl', function ($scope, $state) {
+  $scope.login = function(){
+    $state.go('tabs.photostream');
+  }
+  
 })
 
 .controller('photostreamCtrl', function($rootScope, $ionicLoading, $scope, $photoConnect, $state, $stateParams){

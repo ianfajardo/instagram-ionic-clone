@@ -1,6 +1,6 @@
 {
   "name": "instagram",
-  "app_id": "",
+  "app_id": "ed53a3ee",
   "gulpStartupTasks": [
     "sass",
     "watch"

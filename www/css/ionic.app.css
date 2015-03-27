@@ -7608,8 +7608,18 @@ a.button {
   src: url('../fonts/OpenSans-Light-webfont.eot');
   src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Light-webfont.svg') format('svg'); }
 
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/nunito/Nunito-Regular-webfont.eot');
+  src: url('../fonts/nunito/Nunito-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/nunito/Nunito-Regular-webfont.woff') format('woff'), url('../fonts/nunito/Nunito-Regular-webfont.ttf') format('truetype'), url('../fonts/nunito/Nunito-Regular-webfont.svg') format('svg'); }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat/Montserrat-Regular-webfont.eot');
+  src: url('../fonts/Montserrat/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Montserrat/Montserrat-Regular-webfont.woff') format('woff'), url('../fonts/Montserrat/Montserrat-Regular-webfont.ttf') format('truetype'), url('../fonts/Montserrat/Montserrat-Regular-webfont.svg') format('svg'); }
+
 body, .ionic-body, h1, h2, h3, h4, button {
-  font-family: "OpenSansLight" !important; }
+  font-family: "Montserrat" !important; }
 
 .tab-item.tab-item-active, .tab-item.active, .tab-item.activated {
   color: white; }
